@@ -1,4 +1,4 @@
-package com.vnnaz.telegrambot.config;
+package com.vnnaz.telegrambot.configuration;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.PropertySource;
 @Configuration
 @Data
 @PropertySource("application.properties")
-public class BotConfig {
+public class BotConfiguration {
     @Value("${bot.name}")
     private String botName;
     @Value("${bot.token}")
